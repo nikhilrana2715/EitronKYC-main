@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       // webpack
       config.watchOptions = {
         ignored: ['**/*'],
+      }
     }
     return config;
   },
