@@ -1,0 +1,108 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Country {
+  id          String @id @default(cuid())
+  name        String @unique
+  code        String @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  documents   Document[]
+}
+
+model DocumentType {
+  id          String @id @default(cuid())
+  name        String @unique
+  slug        String @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  documents   Document[]
+}
+
+model Document {
+  id              String @id @default(cuid())
+  countryId       String
+  documentTypeId  String
+  fullName        String
+  dateOfBirth     String
+  dateOfIssue     String
+  photo           String?
+  state           String?
+  fullAddress     String?
+  signature       String?
+  documentNumber  String?
+  notes           String?
+  price           Float
+  isActive        Boolean @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  country         Country @relation(fields: [countryId], references: [id])
+  documentType    DocumentType @relation(fields: [documentTypeId], references: [id])
+  orders          OrderItem[]
+}
+
+model User {
+  id                String @id @default(cuid())
+  email             String @unique
+  fullName          String?
+  telegramUsername  String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  
+  orders            Order[]
+}
+
+model Order {
+  id                String @id @default(cuid())
+  userId            String?
+  customerName      String
+  email             String
+  telegramUsername  String
+  totalAmount       Float
+  status            String @default("pending")
+  paymentStatus     String @default("pending")
+  paymentId         String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  
+  user              User? @relation(fields: [userId], references: [id])
+  items             OrderItem[]
+}
+
+model OrderItem {
+  id          String @id @default(cuid())
+  orderId     String
+  documentId  String
+  price       Float
+  createdAt   DateTime @default(now())
+  
+  order       Order @relation(fields: [orderId], references: [id])
+  document    Document @relation(fields: [documentId], references: [id])
+}
+
+model PaymentConfig {
+  id                  String @id @default(cuid())
+  apiKey              String
+  apiSecret           String
+  binanceId           String
+  paymentCurrency     String @default("USDT")
+  verificationWindow  Int @default(15)
+  isActive            Boolean @default(false)
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
