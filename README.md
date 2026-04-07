@@ -144,6 +144,6 @@ src/
 - Start building your app with reusable components and best practices.
 - Deploy confidently with production-ready configuration.
 
-<h3 align="center">🧠 Built with ❤️ by <a href="https://github.com/nabilaminhridoy">Nabil Amin Hridoy</a></h3> <p align="center"> © 2025 EitronKYC — All Rights Reserved </p>
+<h3 align="center">🧠 Built with ❤️ by <a href="https://github.com/nikhilrana2715">Nikhil Rana</a></h3> <p align="center"> © 2026 EitronKYC — All Rights Reserved </p>
 
 
