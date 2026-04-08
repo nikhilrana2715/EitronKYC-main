@@ -1,149 +1,141 @@
+<h1 align="center">EitronKYC</h1>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/public/banner.png" alt="Project Banner" width="100%">
+  <strong>Empowering Trust Through Smarter KYC Solutions</strong><br/>
+  From digital onboarding to identity verification — seamless, secure, and smart.
 </p>
 
-<h1 align="center">🚀 Modern Next.js Code Scaffold</h1>
-
 <p align="center">
-  A production-ready, modern web application scaffold built with cutting-edge technologies —  
-  designed to accelerate your workflow and deliver scalable, maintainable applications.
-</p>
-
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=nextdotjs" />
   <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" />
   <img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma" />
   <img src="https://img.shields.io/badge/NextAuth.js-Secure-000?style=for-the-badge&logo=auth0" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge" />
 </p>
 
+<p align="center">
+  <a href="https://eitron-kyc-main-rjf2.vercel.app" target="_blank">
+    🌐 Live Demo: https://eitron-kyc-main-rjf2.vercel.app
+  </a>
+</p>
 
-## ✨ Technology Stack
+---
 
-### 🎯 Core Framework
-- ⚡ **Next.js 15** — The React framework for production with App Router  
-- 📘 **TypeScript 5** — Type-safe JavaScript for a better developer experience  
-- 🎨 **Tailwind CSS 4** — Utility-first CSS framework for rapid UI development  
+## 📌 About
 
+**EitronKYC** is a modern KYC (Know Your Customer) platform built with Next.js 15. It provides businesses with AI-powered identity verification, global compliance tools, and seamless customer onboarding solutions.
 
-### 🧩 UI Components & Styling
-- 🧩 **shadcn/ui** — High-quality, accessible components built on Radix UI  
-- 🎯 **Lucide React** — Beautiful & consistent icon library  
-- 🌈 **Framer Motion** — Production-ready motion library for React  
-- 🎨 **Next Themes** — Perfect dark mode in just 2 lines of code  
+---
 
+## 🚀 Live Demo
 
-### 📋 Forms & Validation
-- 🎣 **React Hook Form** — Performant forms with easy validation  
-- ✅ **Zod** — TypeScript-first schema validation  
+🔗 **[https://eitron-kyc-main-rjf2.vercel.app](https://eitron-kyc-main-rjf2.vercel.app)**
 
+---
 
-### 🔄 State Management & Data Fetching
-- 🐻 **Zustand** — Simple, scalable state management  
-- 🔄 **TanStack Query** — Powerful data synchronization for React  
-- 🌐 **Axios** — Promise-based HTTP client  
+## ✨ Features
 
+- 🌍 **Global Compliance** — AML, GDPR, and local regulatory compliance
+- 🤖 **AI-Powered Verification** — Real-time identity verification using machine learning
+- 🔗 **Seamless Integration** — Easy API & SDK integration for customer onboarding
+- 🔐 **Secure Authentication** — NextAuth.js powered login/signup flows
+- 📱 **Responsive Design** — Mobile-first UI with dark/light mode
+- ⚡ **Fast Performance** — Optimized Next.js build with static generation
 
-### 🗄️ Database & Backend
-- 🗄️ **Prisma** — Next-generation Node.js & TypeScript ORM  
-- 🔐 **NextAuth.js** — Complete open-source authentication solution  
+---
 
+## 🛠️ Technology Stack
 
-### 🎨 Advanced UI Features
-- 📊 **TanStack Table** — Headless UI for building tables and datagrids  
-- 🖱️ **DND Kit** — Modern drag-and-drop toolkit for React  
-- 📊 **Recharts** — Redefined chart library built with React and D3  
-- 🖼️ **Sharp** — High-performance image processing  
+| Category | Technology |
+|---|---|
+| Framework | Next.js 15.5 |
+| Language | TypeScript 5 |
+| Styling | Tailwind CSS 4 |
+| UI Components | shadcn/ui + Radix UI |
+| Database ORM | Prisma |
+| Authentication | NextAuth.js |
+| State Management | Zustand |
+| Data Fetching | TanStack Query + Axios |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| Forms | React Hook Form + Zod |
+| Charts | Recharts |
+| Drag & Drop | DND Kit |
 
+---
 
-### 🌍 Internationalization & Utilities
-- 🌍 **Next Intl** — Internationalization library for Next.js  
-- 📅 **Date-fns** — Modern JavaScript date utility library  
-- 🪝 **ReactUse** — Collection of essential React hooks for modern development  
+## 📁 Project Structure
 
+```
+src/
+├── app/                  # Next.js App Router pages
+│   ├── page.tsx          # Home page
+│   └── layout.tsx        # Root layout
+├── components/
+│   ├── layout/           # Navbar, Footer
+│   └── ui/               # shadcn/ui components
+├── hooks/                # Custom React hooks
+└── lib/                  # Utilities, auth, db config
+prisma/
+└── schema.prisma         # Database schema
+```
 
-## 🎯 Why Use This Scaffold?
+---
 
-- 🏎️ **Fast Development** — Pre-configured tooling and best practices  
-- 🎨 **Beautiful UI** — Complete `shadcn/ui` component library with advanced interactions  
-- 🔒 **Type Safety** — Full TypeScript configuration with Zod validation  
-- 📱 **Responsive** — Mobile-first design with smooth animations  
-- 🗄️ **Database Ready** — Prisma ORM configured for backend development  
-- 🔐 **Auth Included** — Secure authentication flows with NextAuth.js  
-- 📊 **Data Visualization** — Charts, tables & drag-and-drop functionality  
-- 🌍 **i18n Ready** — Multi-language support with Next Intl  
-- 🚀 **Production Ready** — Optimized build & deployment setup  
+## ⚙️ Getting Started
 
+### Prerequisites
 
-## 🚀 Quick Start
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/nikhilrana2715/EitronKYC-main.git
+
+# Navigate to project directory
+cd EitronKYC-main
+
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
+```
 
-# Build for production
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+
+```bash
 npm run build
-
-# Start production server
 npm start
 ```
 
-> 🖥️ Open [**http://localhost:3000**](http://localhost:3000) to see your application running.
+---
 
+## 🌍 Deployment
 
-## 📁 Project Structure
-```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
+This project is deployed on **Vercel**.
 
-## 🎨 Available Features & Components
+🔗 Live URL: [https://eitron-kyc-main-rjf2.vercel.app](https://eitron-kyc-main-rjf2.vercel.app)
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout:** Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms:** Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback:** Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation:** Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay:** Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display:** Badge, Avatar, Calendar
+To deploy your own:
+1. Fork this repository
+2. Import to [Vercel](https://vercel.com)
+3. Click Deploy
 
-### 📊 Advanced Data Features
-- **Tables:** Sorting, filtering, pagination (TanStack Table)
-- **Charts:** Beautiful visualizations with Recharts
-- **Forms:** Type-safe validation with React Hook Form + Zod
+---
 
-### 🎨 Interactive Features
-- **Animations:** Smooth micro-interactions (Framer Motion)
-- **Drag & Drop:** Modern toolkit (DND Kit)
-- **Theme Switching:** Built-in dark/light mode support
+## 📄 License
 
-### 🔐 Backend Integration
-- **Authentication:** Ready-to-use auth flows with NextAuth.js
-- **Database:** Type-safe ORM with Prisma
-- **API Client:** Axios + TanStack Query
-- **State Management:** Simple and scalable with Zustand
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
-### 🌍 Production Features
-- **nternationalization: Multi-language support (Next Intl)
-- **Image Optimization: Automatic image processing (Sharp)
-- **Type Safety: End-to-end TypeScript with Zod
-- **Essential Hooks: 100+ ReactUse utilities
+---
 
-### 🤝 How to Use
-- Clone this scaffold to start your project.
-- Install dependencies using npm install.
-- Start building your app with reusable components and best practices.
-- Deploy confidently with production-ready configuration.
-
-<h3 align="center">🧠 Built with ❤️ by <a href="https://github.com/nikhilrana2715">Nikhil Rana</a></h3> <p align="center"> © 2026 EitronKYC — All Rights Reserved </p>
-
-
+<h3 align="center">Built with ❤️ by <a href="https://github.com/nikhilrana2715">Nikhil Rana</a></h3>
+<p align="center">© 2026 EitronKYC — All Rights Reserved</p>
